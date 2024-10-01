@@ -1,0 +1,421 @@
+  2024-09-05T13:15:36.287614Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T13:46:08.966240Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:35:58.776949Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:36:03.423282Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:36:03.589656Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:36:03.639549Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:36:04.650448Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:37:06.016593Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:37:42.899528Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:38:43.467557Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:39:54.376682Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:39:57.322958Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:40:07.633393Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:42:37.396272Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:42:55.298817Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:43:08.950080Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:43:09.082062Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:43:40.235897Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:43:46.569442Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:44:09.395187Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:44:41.138205Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T14:44:44.129373Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T15:09:35.430134Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T15:35:08.838242Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-05T18:05:04.602866Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:10.963435Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:13.531151Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:14.509851Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:14.703491Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:14.860245Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:14.999299Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.132223Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.249794Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.382340Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.509228Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.633206Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:15.759248Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:05:21.940725Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:9: unfinished string near '''
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:15:47.709784Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:27: <eof> expected near 'return'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:15:51.672318Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:27: <eof> expected near 'return'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:15:52.419477Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:27: <eof> expected near 'return'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:15:52.719397Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:27: <eof> expected near 'return'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:15:58.231416Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:27: <eof> expected near 'return'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:23:44.659423Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:23:47.489236Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:23:47.754551Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:23:47.969505Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:23:54.285078Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:23:55.134684Z ERROR yazi::lives::lives: runtime error: [string "smart-enter"]:16: attempt to perform bitwise operation on a string value (constant 'powershell -Command "Add-Type -AssemblyName System.Windows.Forms 
+ [System.Windows.Forms.SendKeys]::SendWait(')
+stack traceback:
+	[C]: in metamethod 'bxor'
+	[string "smart-enter"]:16: in function 'smart-enter.entry'
+    at yazi-fm\src\lives\lives.rs:60
+
+  2024-09-05T18:24:55.910480Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:57.643463Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:57.859306Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.059355Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.244125Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.422939Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.619473Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.799025Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:58.989091Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:59.175757Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:59.371234Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:59.589297Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-05T18:24:59.758967Z  WARN yazi::app::commands::plugin: syntax error: [string "smart-enter"]:16: unfinished string near ''powershell -Command "$wshell = New-Object -ComObject wscript.shell;'
+    at yazi-fm\src\app\commands\plugin.rs:54
+
+  2024-09-06T13:53:40.667128Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\version
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2024-09-06T13:53:40.700576Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\mfiliatreaultheber\.gitconfig
+C:\Users\mfiliatreaultheber\.wezterm.lua
+C:\Users\mfiliatreaultheber\NTUSER.DAT
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG1
+C:\Users\mfiliatreaultheber\ntuser.dat.LOG2
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\mfiliatreaultheber\NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+C:\Users\mfiliatreaultheber\ntuser.ini
+    at yazi-scheduler\src\prework\prework.rs:49
+

@@ -1,0 +1,120 @@
+export LANG=en_US.UTF-8
+
+alias ls='eza --long --oneline --color=always --icons=always --all --sort=name --group-directories-first --no-filesize --no-permissions --no-time --no-user --git-ignore'
+alias find='fd'
+alias cat='bat '
+alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
+# alias grep='batgrep'
+# alias rg='batgrep'
+alias lg='lazygit'
+
+# Function to edit config
+edit_config() {
+hx ~/scripts/ ~/.config/wezterm/.wezterm.lua ~/AppData/Roaming/helix/config.toml ~/AppData/Roaming/helix/languages.toml 
+}
+
+#Function to rename the vtt to Français
+rename_vtt() {
+    fd -e vtt -x mv {} {//}/Français.vtt
+}
+
+# Function to get the txt from a text file
+# get_desc() {
+#     cat "$1"*.txt | clip
+# }
+
+get_desc() {
+    nvim -c 'normal ggVG"+y' -c 'q!' "$1"*.txt
+}
+
+# Function to resize and crop JPEG images to a 16:9 aspect ratio
+resize_and_crop_16_9() {
+  if [ "$#" -ne 1 ]; then
+    echo "Usage: resize_and_crop_16_9 <input_pattern>"
+    return 1
+  fi
+
+  local input_pattern="$1"
+  local aspect_width=16
+  local aspect_height=9
+  local tinyfy_api_key="34dHP13t1mXFPmxF1QPHjM7Fp5znrWWP"  # Replace with your Tinyfy API key
+
+  for file in $input_pattern; do
+    if [ ! -f "$file" ]; then
+      echo "File $file does not exist."
+      continue
+    fi
+
+    # Get the original dimensions
+    local dimensions
+    dimensions=$(magick identify -format "%wx%h" "$file")
+    local orig_width
+    local orig_height
+    IFS='x' read -r orig_width orig_height <<< "$dimensions"
+
+    # Calculate the new dimensions to fit the 16:9 aspect ratio
+    local target_width
+    local target_height
+
+    if [ "$orig_width" -ge "$orig_height" ]; then
+      # Landscape or square image
+      target_height=$((orig_width * aspect_height / aspect_width))
+      if [ "$target_height" -gt "$orig_height" ]; then
+        target_height=$orig_height
+        target_width=$((orig_height * aspect_width / aspect_height))
+      else
+        target_width=$orig_width
+      fi
+    else
+      # Portrait image
+      target_width=$((orig_height * aspect_width / aspect_height))
+      if [ "$target_width" -gt "$orig_width" ]; then
+        target_width=$orig_width
+        target_height=$((orig_width * aspect_height / aspect_width))
+      else
+        target_height=$orig_height
+      fi
+    fi
+
+    # Calculate padding sizes
+    local pad_width=$(( (target_width - orig_width) / 2 ))
+    local pad_height=$(( (target_height - orig_height) / 2 ))
+
+    # Resize and pad the image
+    temp_file=$(mktemp)
+    # magick "$file" -resize "${target_width}x${target_height}>" -background white -gravity center -extent "${target_width}x${target_height}" "$temp_file"
+    magick "$file" -resize "${target_width}x${target_height}>" -background white -gravity center "$temp_file"
+
+    # Compress the image with Tinyfy and capture the response
+    response=$(curl -s -D - --user api:$tinyfy_api_key --data-binary @$temp_file https://api.tinify.com/shrink)
+
+    # Print response headers for debugging
+    echo "Response headers:"
+    echo "$response" | grep -E '^(HTTP/|Location:)'
+
+    # Extract the compressed image URL from the Location header
+    compressed_url=$(echo "$response" | grep -i "Location:" | awk '{print $2}' | tr -d '\r')
+
+    if [ -z "$compressed_url" ]; then
+      echo "Error: Failed to get compressed image URL for $file"
+      rm "$temp_file"
+      continue
+    fi
+
+    # Download the compressed image and overwrite the original file
+    curl -s --user api:$tinyfy_api_key "$compressed_url" --output "$file"    
+    
+    # Clean up temporary file
+    rm "$temp_file"
+
+    echo "Processed and compressed $file"
+  done
+}
+
+eval "$(zoxide init --cmd cd bash)"
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+source ~/scripts/plugins_bash/fzf-bash-completion.sh
+bind -x '"\t": fzf_bash_completion'
+eval "$(register-python-argcomplete pipx)"
