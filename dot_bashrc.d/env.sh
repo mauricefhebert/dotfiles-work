@@ -10,5 +10,5 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 elif [[ "$OSTYPE" == "msys"* || "$OSTYPE" == "win32" ]]; then
   export LLVM="C:\Program Files\LLVM\bin"
   export NVM_SYMLINK="C:\Program Files\nodejs"
-  export NVM_DIR="~/.config/nvm"
+  export NVM_DIR="~/nvm"
 fi
