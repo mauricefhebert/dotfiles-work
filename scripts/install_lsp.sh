@@ -10,15 +10,27 @@ else
     exit 1
 fi
 
-# Function to install a package if not already installed
+# Function to install a package if not already installed, log successes and errors
 install_if_missing() {
   if ! command -v $1 &> /dev/null; then
     echo "Installing $1..."
-    $2
+    if $2; then
+      echo "$1 installed successfully"
+      success_packages+=("$1")
+    else
+      echo "Error installing $1"
+      error_packages+=("$1")
+    fi
   else
     echo "$1 is already installed."
+    already_installed_packages+=("$1")
   fi
 }
+
+# Initialize arrays for logging
+success_packages=()
+error_packages=()
+already_installed_packages=()
 
 echo "Starting installation of LSPs, debuggers, linters, and formatters..."
 
@@ -168,7 +180,7 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "lldb" "$install_cmd_scoop llvm"
     
     # CMake
-    install_if_missing "cmake-language-server" "$install_cmd_npm cmake-language-server"
+    install_if_missing "cmake-language-server" "pip install cmake-language-server"    
     
     # CSS
     install_if_missing "vscode-css-languageserver-bin" "$install_cmd_npm vscode-css-languageserver-bin"
@@ -178,26 +190,25 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "omnisharp" "$install_cmd_scoop omnisharp"
     
     # Docker
-    install_if_missing "docker-langserver" "$install_cmd_npm dockerfile-language-server-nodejs"
-    install_if_missing "hadolint" "$install_cmd_scoop hadolint"
+    install_if_missing "docker-langserver" "$install_cmd_npm dockerfile-language-server-nodejs"    install_if_missing "hadolint" "$install_cmd_scoop hadolint"
     
     # Docker Compose
-    install_if_missing "docker-compose-language-service" "$install_cmd_npm docker-compose-language-service"
-    
+    install_if_missing "docker-compose-language-service" "winget install Docker.DockerDesktop"    
+
     # Go
     install_if_missing "gopls" "$install_cmd_npm gopls"
     install_if_missing "golangci-lint" "$install_cmd_npm golangci-lint"
     install_if_missing "delve" "$install_cmd_npm delve"
     
     # GraphQL
-    install_if_missing "graphql-lsp" "$install_cmd_npm graphql-lsp"
+    install_if_missing "graphql-lsp" "$install_cmd_npm graphql-language-service-cli"    
     
     # HTML
     install_if_missing "vscode-html-languageserver-bin" "$install_cmd_npm vscode-html-languageserver-bin"
     install_if_missing "prettier" "$install_cmd_npm prettier"
     
     # Java
-    install_if_missing "jdtls" "$install_cmd_winget \"Eclipse Adoptium Eclipse Temurin JDK\""
+    install_if_missing "jdtls" "$install_cmd_winget \"Eclipse Adoptium Eclipse Temurin JDK\""    
     
     # JavaScript/TypeScript
     install_if_missing "typescript-language-server" "$install_cmd_npm typescript-language-server"
@@ -208,7 +219,7 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "vscode-json-languageserver" "$install_cmd_npm vscode-json-languageserver"
     
     # Kotlin
-    install_if_missing "kotlin-language-server" "$install_cmd_npm kotlin-language-server"
+    install_if_missing "kotlin-language-server" "manual installation from GitHub"    
     
     # LaTex
     install_if_missing "texlab" "$install_cmd_npm texlab"
@@ -228,7 +239,7 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "pylsp" "$install_cmd_npm python-lsp-server"
     install_if_missing "black" "$install_cmd_npm black"
     install_if_missing "flake8" "$install_cmd_npm flake8"
-    install_if_missing "debugpy" "$install_cmd_npm debugpy"
+    install_if_missing "debugpy" "pip install debugpy"    
     
     # Rust
     install_if_missing "rust-analyzer" "$install_cmd_npm rust-analyzer"
@@ -253,7 +264,7 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "terraform-ls" "$install_cmd_scoop terraform-ls"
     
     # TOML
-    install_if_missing "taplo" "$install_cmd_npm taplo-cli"
+    install_if_missing "taplo" "cargo install taplo-cli"    
     
     # Vue
     install_if_missing "vue-language-server" "$install_cmd_npm @vue/language-server"
@@ -263,6 +274,26 @@ elif [[ $OS == "windows" ]]; then
     install_if_missing "lemminx" "$install_cmd_npm lemminx"
     
     # YAML
-    install_if_missing "yaml-language-server" "$install_cmd_npm yaml-language-server"
-    
+        install_if_missing "yaml-language-server" "$install_cmd_npm yaml-language-server"
+fi
+
+# Logging the results
+echo ""
+echo "-- Packages installed successfully:"
+for package in "${success_packages[@]}"; do
+  echo "$package"
+done
+
+echo ""
+echo "-- Packages already installed:"
+for package in "${already_installed_packages[@]}"; do
+  echo "$package"
+done
+
+echo ""
+echo "-- Packages with errors or not found:"
+for package in "${error_packages[@]}"; do
+  echo "$package"
+done
+
 echo "Installation of LSPs, debuggers, linters, and formatters completed!"
