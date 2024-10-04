@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Function to edit config
-edit_config() {
-    hx ~/scripts/ ~/.config/wezterm/.wezterm.lua ~/AppData/Roaming/helix/config.toml ~/AppData/Roaming/helix/languages.toml 
+edit_editor() {
+    hx ~/.config/wezterm/.wezterm.lua ~/AppData/Roaming/helix/config.toml ~/AppData/Roaming/helix/languages.toml 
+}
+
+edit_bashrc() {
+  hx ~/.bashrc ~/.bashrc.d/aliases.sh ~/.bashrc.d/env.sh ~/.bashrc.d/functions.sh ~/scripts/functions.sh
 }
 
 # Function to rename the vtt to Français
