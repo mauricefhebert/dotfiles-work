@@ -16,4 +16,10 @@ done
 # zoxide init
 eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
-eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell bash)"
+# eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell bash)"
+eval $(fnm env | sed 1d)
+export PATH=$(cygpath $FNM_MULTISHELL_PATH):$PATH
+
+if [[ -f .node-version || -f .nvmrc ]]; then
+    fnm use
+fi
