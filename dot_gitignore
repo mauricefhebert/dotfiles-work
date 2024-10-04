@@ -1,0 +1,16 @@
+# Ignore the .env file containing sensitive information
+.env
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore Node.js dependencies if applicable
+node_modules/
+
+# Ignore Python virtual environments if applicable
+venv/
+.env/
