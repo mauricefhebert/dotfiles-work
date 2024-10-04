@@ -15,3 +15,4 @@ done
 
 # zoxide init
 eval "$(zoxide init --cmd cd bash)"
+eval "$(starship init bash)"
