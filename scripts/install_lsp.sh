@@ -32,7 +32,9 @@ success_packages=()
 error_packages=()
 already_installed_packages=()
 
-echo "Starting installation of LSPs, debuggers, linters, and formatters..."
+# Log file location
+log_file="./installation_log.txt"
+echo "Starting installation of LSPs, debuggers, linters, and formatters..." | tee "$log_file"
 
 # Linux installation commands
 if [[ $OS == "linux" ]]; then
@@ -278,22 +280,22 @@ elif [[ $OS == "windows" ]]; then
 fi
 
 # Logging the results
-echo ""
-echo "-- Packages installed successfully:"
+echo "" | tee -a "$log_file"
+echo "-- Packages installed successfully:" | tee -a "$log_file"
 for package in "${success_packages[@]}"; do
-  echo "$package"
+  echo "$package" | tee -a "$log_file"
 done
 
-echo ""
-echo "-- Packages already installed:"
+echo "" | tee -a "$log_file"
+echo "-- Packages already installed:" | tee -a "$log_file"
 for package in "${already_installed_packages[@]}"; do
-  echo "$package"
+  echo "$package" | tee -a "$log_file"
 done
 
-echo ""
-echo "-- Packages with errors or not found:"
+echo "" | tee -a "$log_file"
+echo "-- Packages with errors or not found:" | tee -a "$log_file"
 for package in "${error_packages[@]}"; do
-  echo "$package"
+  echo "$package" | tee -a "$log_file"
 done
 
-echo "Installation of LSPs, debuggers, linters, and formatters completed!"
+echo "Installation of LSPs, debuggers, linters, and formatters completed!" | tee -a "$log_file"
