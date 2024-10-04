@@ -1,7 +1,25 @@
 #!/bin/bash
 
-# Define the Node.js version you want to install
-NODE_VERSION="16.20.2"
+# Function to fetch the latest LTS version using fnm
+get_lts_version() {
+    fnm list-remote --lts | tail -1
+}
+
+# Check if a Node.js version argument is provided
+if [ $# -ne 1 ]; then
+    echo "No Node.js version provided."
+    read -p "Do you want to use the latest LTS version? (y/n): " use_lts
+
+    if [[ "$use_lts" == "y" || "$use_lts" == "Y" ]]; then
+        NODE_VERSION=$(get_lts_version)
+        echo "Using latest LTS version: $NODE_VERSION"
+    else
+        read -p "Please enter the Node.js version you want to install: " NODE_VERSION
+    fi
+else
+    # Node.js version from the command line argument
+    NODE_VERSION=$1
+fi
 
 # Define the global npm packages you want to install
 GLOBAL_PACKAGES=(
@@ -53,4 +71,3 @@ echo "The following global npm packages have been installed:"
 npm list -g --depth=0
 
 echo "Installation complete!"
-
