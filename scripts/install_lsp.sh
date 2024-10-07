@@ -13,20 +13,26 @@ fi
 # Function to install a package if not already installed, log successes and errors
 install_if_missing() {
   if ! command -v $1 &> /dev/null; then
-    echo "Installing $1..."
-    if $2; then
-      echo "$1 installed successfully"
+    echo "Installing $1..." | tee -a "$log_file"
+    if $2 2> temp_err_log.txt; then
+      echo "$1 installed successfully" | tee -a "$log_file"
       success_packages+=("$1")
     else
-      echo "Error installing $1"
-      error_packages+=("$1")
+      # Check if the error is related to permission issues
+      if grep -q "permission denied" temp_err_log.txt || grep -q "0x80070005" temp_err_log.txt; then
+        echo "Permission error detected for $1. Retrying with runas..." | tee -a "$log_file"
+        # Rerun the command with runas for administrator privileges
+        runas /user:administrator "cmd.exe /c $2"
+      else
+        echo "Error installing $1" | tee -a "$log_file"
+        error_packages+=("$1")
+      fi
     fi
   else
-    echo "$1 is already installed."
+    echo "$1 is already installed." | tee -a "$log_file"
     already_installed_packages+=("$1")
   fi
 }
-
 # Initialize arrays for logging
 success_packages=()
 error_packages=()
@@ -165,6 +171,29 @@ elif [[ $OS == "windows" ]]; then
     install_cmd_scoop="scoop install"
     install_cmd_winget="winget install"
     
+    # Step to Install MSYS2 and GCC for compiling native modules like `ring`
+    echo "Installing MSYS2 for gcc compiler..." | tee -a "$log_file"
+    if ! command -v gcc &> /dev/null; then
+      echo "MSYS2 and gcc not found. Installing via scoop..." | tee -a "$log_file"
+      if $install_cmd_scoop msys2; then
+        echo "MSYS2 installed successfully. Installing GCC..." | tee -a "$log_file"
+        (
+          echo "pacman -Syu"
+          echo "pacman -S --noconfirm mingw-w64-x86_64-toolchain"
+        ) | C:/msys64/msys2_shell.cmd -defterm -here -no-start -mingw64
+        echo "GCC installed successfully via MSYS2." | tee -a "$log_file"
+      else
+        echo "Error installing MSYS2." | tee -a "$log_file"
+        error_packages+=("msys2")
+      fi
+    else
+      echo "GCC already installed." | tee -a "$log_file"
+    fi
+    
+    # Step to Install Visual Studio Build Tools as an alternative
+    echo "Installing Visual Studio Build Tools..." | tee -a "$log_file"
+    install_if_missing "vs_build_tools" "$install_cmd_winget 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'"
+
     # Astro
     install_if_missing "@astrojs/language-server" "$install_cmd_npm @astrojs/language-server"
     
